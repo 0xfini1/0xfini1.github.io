@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grab OSINT</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+.table th, .table td {
+    vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+<table class="table table-striped">
+<thead>
+<tr>
+<th>ФИО</th>
+<th>Дата рождения</th>
+<th>Пол</th>
+<th>Гражданство</th>
+<th>Место отправления</th>
+<th>Номер документа</th>
+<th>Тип документа</th>
+<th>Место прибытия</th>
+<th>Тип оператора</th>
+<th>OPERATORID</th>
+<th>REGISTERTIMEIS</th>
+<th>Дата отправления</th>
+<th>Дата прибытия</th>
+<th>ROUTE</th>
+<th>ROUTETYPE</th>
+<th>BUYDATE</th>
+<th>PLACES</th>
+<th>TERMNUMORSURNAME</th>
+<th>ТС модель</th>
+<th>Рег знак ТС</th>
+<th>PLACEID</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Яковенко Андрей Викторович 1984</td>
+<td>20.06.1984</td>
+<td>m</td>
+<td>ru</td>
+<td>вологда, Автовокзал, 42412, Stop</td>
+<td>8706212738</td>
+<td>0</td>
+<td>санкт-петербург, Автовокзал №2, 42403, Stop</td>
+<td>0</td>
+<td>25134</td>
+<td>09.10.2020 18:06:00</td>
+<td>11.10.2020 06:30:00</td>
+<td>10.10.2020 21:30:00</td>
+<td>new-r2458</td>
+<td>0</td>
+<td>09.10.2020 18:06:00</td>
+<td>1</td>
+<td>https://atlasbus.ru</td>
+<td> </td>
+<td> </td>
+<td>22977</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Святославович 1973</td>
+<td>15.03.1973</td>
+<td>m</td>
+<td>ru</td>
+<td>новосибирская Область, Новосибирск Гл.жд</td>
+<td>0117426626</td>
+<td>0</td>
+<td>алтайский Край, Бийск</td>
+<td>1</td>
+<td>21476</td>
+<td>17.10.2020 08:54:00</td>
+<td>18.10.2020 14:00:00</td>
+<td>18.10.2020 07:20:00</td>
+<td>#54.04.002/2</td>
+<td>1</td>
+<td>17.10.2020 08:54:00</td>
+<td>место 21</td>
+<td>web Касса - Gsd, Ооо Артмарк W..</td>
+<td> </td>
+<td> </td>
+<td>22183</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Федорович 1967</td>
+<td>28.04.1967</td>
+<td>m</td>
+<td>643</td>
+<td>ленинградская Ас</td>
+<td>0312059632</td>
+<td>0</td>
+<td>ростов Главный Ав</td>
+<td>1</td>
+<td>21031</td>
+<td>18.10.2020 12:10:00</td>
+<td>18.10.2020 15:53:00</td>
+<td>18.10.2020 13:20:00</td>
+<td>#23.61.045</td>
+<td>0</td>
+<td>18.10.2020 12:10:00</td>
+<td>26</td>
+<td>9</td>
+<td>45 М</td>
+<td>ан00299</td>
+<td>22050</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Евгеньевич 1976</td>
+<td>13.07.1976</td>
+<td>m</td>
+<td>643</td>
+<td>амбросиевка Ас</td>
+<td>6020952462</td>
+<td>0</td>
+<td>таганрогский Ав</td>
+<td>1</td>
+<td>24139</td>
+<td>19.10.2020 16:10:00</td>
+<td>19.10.2020 19:57:00</td>
+<td>19.10.2020 17:45:00</td>
+<td>ростов-на-дону Г (россия) - Донецк Г (украина)</td>
+<td>1</td>
+<td>19.10.2020 16:10:00</td>
+<td>36</td>
+<td>1</td>
+<td>лионс 59 М</td>
+<td>а831авднр</td>
+<td>22962</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Николаевич 2003</td>
+<td>23.04.2003</td>
+<td>m</td>
+<td>россия</td>
+<td>моздок</td>
+<td>0717287782</td>
+<td>0</td>
+<td>пятигорск</td>
+<td>1</td>
+<td>21082</td>
+<td>29.10.2020 16:13:00</td>
+<td>30.10.2020 13:03:00</td>
+<td>30.10.2020 09:25:00</td>
+<td>357</td>
+<td>0</td>
+<td>29.10.2020 16:13:00</td>
+<td>16</td>
+<td>касса 4 (пятигорск Ав)</td>
+<td>мерседес</td>
+<td> </td>
+<td>22015</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Иванович 1965</td>
+<td>19.05.1965</td>
+<td>m</td>
+<td>россия</td>
+<td>нальчик</td>
+<td>0710406892</td>
+<td>0</td>
+<td>минводы</td>
+<td>1</td>
+<td>21041</td>
+<td>23.10.2020 19:11:00</td>
+<td>23.10.2020 21:50:00</td>
+<td>23.10.2020 19:35:00</td>
+<td>746</td>
+<td>0</td>
+<td>23.10.2020 19:11:00</td>
+<td>12</td>
+<td>касса 5 (минводы Ав)</td>
+<td>луидор</td>
+<td>х344хх07</td>
+<td>22016</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Николаевич 2003</td>
+<td>23.04.2003</td>
+<td>m</td>
+<td>россия</td>
+<td>луковская</td>
+<td>0717287782</td>
+<td>0</td>
+<td>пятигорск</td>
+<td>14</td>
+<td>21508</td>
+<td>03.10.2020 16:55:00</td>
+<td>03.10.2020 20:05:00</td>
+<td>03.10.2020 16:50:00</td>
+<td>432</td>
+<td>0</td>
+<td>03.10.2020 16:42:00</td>
+<td>16</td>
+<td>касса 4 (пятигорск Ав)</td>
+<td>форд Транзит</td>
+<td>е906ув161</td>
+<td>22015</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Александрович 1972</td>
+<td>17.10.1972</td>
+<td>m</td>
+<td>россия</td>
+<td>донецк</td>
+<td>6019716490</td>
+<td>0</td>
+<td>ас Новоясеневская</td>
+<td>1</td>
+<td>24115</td>
+<td>02.10.2020 13:13:00</td>
+<td>03.10.2020 15:15:00</td>
+<td>02.10.2020 16:00:00</td>
+<td>москва - Донецк</td>
+<td>0</td>
+<td>02.10.2020 13:13:00</td>
+<td>8</td>
+<td>oоо `люкс-экспресс`</td>
+<td> </td>
+<td> </td>
+<td>22520</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Николаевич 2003</td>
+<td>23.04.2003</td>
+<td>m</td>
+<td>россия</td>
+<td>луковская</td>
+<td>0717287782</td>
+<td>0</td>
+<td>пятигорск</td>
+<td>1</td>
+<td>21508</td>
+<td>09.10.2020 12:49:00</td>
+<td>09.10.2020 20:05:00</td>
+<td>09.10.2020 16:50:00</td>
+<td>432</td>
+<td>0</td>
+<td>09.10.2020 12:49:00</td>
+<td>16</td>
+<td>касса 2 (пятигорск Ав)</td>
+<td>форд Транзит</td>
+<td> </td>
+<td>22015</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Фёдорович 1967</td>
+<td>28.04.1967</td>
+<td>m</td>
+<td>185</td>
+<td>#61002</td>
+<td>0312 059632</td>
+<td>0</td>
+<td>#23031</td>
+<td>14</td>
+<td>25201</td>
+<td>16.10.2020 06:22:00</td>
+<td>16.10.2020 09:04:00</td>
+<td>16.10.2020 06:40:00</td>
+<td>#23.61.039</td>
+<td>0</td>
+<td>16.10.2020 06:22:00</td>
+<td>без Места</td>
+<td>акопова</td>
+<td>фольксваген_20м</td>
+<td>т646сс93</td>
+<td>22653</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Яковенко Андрей Николаевич 2003</td>
+<td>23.04.2003</td>
+<td>m</td>
+<td>россия</td>
+<td>луковская</td>
+<td>0717287782</td>
+<td>0</td>
+<td>пятигорск</td>
+<td>1</td>
+<td>21508</td>
+<td>03.10.2020 16:42:00</td>
+<td>03.10.2020 20:05:00</td>
+<td>03.10.2020 16:50:00</td>
+<td>432</td>
+<td>0</td>
+<td>03.10.2020 16:42:00</td>
+<td>16</td>
+<td>касса 4 (пятигорск Ав)</td>
+<td>форд Транзит</td>
+<td>е906ув161</td>
+<td>22015</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
